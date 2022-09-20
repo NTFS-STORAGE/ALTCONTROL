@@ -1,0 +1,2 @@
+getgenv().HostUser = "emppu_buiqar"
+getgenv().Alts = {3636294023, 3599530963, 3738753898} --make sure to put space after every comma as shown in example
