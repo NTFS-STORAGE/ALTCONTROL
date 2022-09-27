@@ -74,7 +74,7 @@ local function AirLock(Type)
 			BP:Destroy()
 		end
 		CmdSettings["AirLock"] = true
-		Variables["Player"].Character.HumanoidRootPart.CFrame = Variables["Player"].Character.HumanoidRootPart.CFrame*CFrame.new(0,10,0)
+		Variables["Player"].Character.HumanoidRootPart.CFrame = Variables["Player"].Character.HumanoidRootPart.CFrame*CFrame.new(0,6,0)
 		local BP = Instance.new("BodyPosition",Variables["Player"].Character.HumanoidRootPart)
 		BP.Name = "AirLockBP"
 		BP.MaxForce = Vector3.new(math.huge,math.huge,math.huge)
