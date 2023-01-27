@@ -3,7 +3,7 @@
 
 -- // SETTINGS \\ --
 
-local SECRET_KEY = "sk-Gn47Han6TFYPCZ3n3FFpT3BlbkFJYOUzWROub4qDzsT4WYW"; --https://beta.openai.com/account/api-keys
+local SECRET_KEY = "3n3FFpT3BlbkFJYOUzWROub4qDzsT4WYW"; --https://beta.openai.com/account/api-keys
 local CLOSE_RANGE_ONLY = true;
 
 _G.MESSAGE_SETTINGS = {
