@@ -3,7 +3,7 @@
 
 -- // SETTINGS \\ --
 
-local SECRET_KEY = "3n3FFpT3BlbkFJYOUzWROub4qDzsT4WYW"; --https://beta.openai.com/account/api-keys
+local SECRET_KEY = "-Gn47Han6b4qDzsT4WYWA"; --https://beta.openai.com/account/api-keys
 local CLOSE_RANGE_ONLY = true;
 
 _G.MESSAGE_SETTINGS = {
@@ -64,17 +64,17 @@ OnMessageDoneFiltering.OnClientEvent:Connect(function(Table)
 	if CLOSE_RANGE_ONLY then if _G.BLACKLISTED[Instance.Name] or (Character.Head.Position - LocalPlayer.Character.Head.Position).Magnitude > _G.MESSAGE_SETTINGS["MAXIMUM_STUDS"] then return end elseif not _G.WHITELISTED[Instance.Name] then return end;
 	
 	Debounce = true;
-me when (A) INLASTPARTKEY
+
 	local HttpRequest = MakeRequest("Human: " .. Message .. "\n\nAI:");
 	local Response = Instance.Name .. ": " .. string.sub(HttpService:JSONDecode(HttpRequest["Body"]).choices[1].text, 2);
 
-	if #Response < 51 then --200
+	if #Response < 43 then --200
 		SayMessageRequest:FireServer(Response, "All");
 		wait(5);
 		Debounce = false;
 	else
 		--warn("Response (> 128): " .. Response);
-		if #Response - 51 < 51 then
+		if #Response - 43 < 43 then
 			SayMessageRequest:FireServer(string.sub(Response, 1, 128), "All");
 			delay(3, function()
 				SayMessageRequest:FireServer(string.sub(Response, 129), "All");
