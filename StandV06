@@ -36,7 +36,6 @@ OWNER = game:GetService("Players"):FindFirstChild(StandOwner)
 rs = game:GetService("RunService")
 
 
-ANIMATION()
 
 getRoot(STAND).CFrame=CFrame.new(-547.482239, 173.374954, -0.0784880966)
 if tonumber(Fpscap) then
