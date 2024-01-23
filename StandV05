@@ -34,12 +34,10 @@ getgenv().___ = 'Ticxyy'
 STAND = game:GetService('Players'):FindFirstChild(game:GetService('Players').LocalPlayer.Name)
 OWNER = game:GetService("Players"):FindFirstChild(StandOwner)
 rs = game:GetService("RunService")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ilyanaes/deleted-chairs/main/CreateScript"))()
-Notify({Title = "Function Loaded",Duration = 30})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ilyanaes/deleted-chairs/main/xxx"))()
-Notify({Title = "Block remote loaded",Duration = 30})
+
+
 ANIMATION()
-Notify({Title = "Animation loaded",Duration = 30})
+
 getRoot(STAND).CFrame=CFrame.new(-547.482239, 173.374954, -0.0784880966)
 if tonumber(Fpscap) then
 _G.FPS = Fpscap
@@ -155,29 +153,7 @@ function Stop()
 end
 Stop()
 
-function Crew(Join)
-if Join == true then
-game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID)wait(1)game.ReplicatedStorage.MainEvent:FireServer("JoinCrew",CrewID)else game.ReplicatedStorage.MainEvent:FireServer("LeaveCrew")end end
-function Dweld()
-local Stuff = {
-"RightHand",
-"LeftHand",
-"RightFoot",
-"LeftFoot",
-"Head"}
-pcall(function()
-for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-for z, BreakingStuff in ipairs(Stuff) do
-if v.Name == BreakingStuff then
-if v:FindFirstChildOfClass("Motor6D") then
-local Weld = v:FindFirstChildOfClass("Motor6D")
-Weld:Destroy()
-end
-end
-end
-end
-end)
-end
+
 
 function Bring(Target)
 Stop()
