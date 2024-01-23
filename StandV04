@@ -30,23 +30,7 @@ lowgraphics = getgenv().LynixSettings.LowGraphics
 Alt = getgenv().LynixSettings.Alt
 getgenv().__ = 'Lynix'
 getgenv().___ = 'Ticxyy'
-local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ilyanaes/deleted-chairs/main/NotificationLibrary"))()
-getgenv().ScriptName = 'ThunderZ V4 Stand Beta'
-local ScriptName = getgenv().ScriptName
-local Notify = NotifyLibrary.Notify
-if getgenv().StandLoaded ~= nil then
-Notify({Title = "Already Executed!",Duration = 5})
-Notify({Title = "Already Executed!",Duration = 5})
-Notify({Title = "Already Executed!",Duration = 5})
-Notify({Title = "Already Executed!",Duration = 5})return end
-if game:GetService("Players"):FindFirstChild(StandOwner) then
-Notify({Title = "Owner Found! ['Owner'] = '"..StandOwner.."'",Duration = 3.4028235e+38})
-getgenv().StandLoaded = true else
-Notify({Title = "Owner Is Not In Server Or The User Invalid",Duration = 30})
-Notify({Title = "Please Check The User On Stand Setting",Duration = 30})
-Notify({Title = "And Try Re Execute!",Duration = 30})
-Notify({Title =  "['Owner'] = '"..StandOwner.."',",Duration = 30})return end
-Notify({Title = "The execution might be slow",Duration = 30})
+
 STAND = game:GetService('Players'):FindFirstChild(game:GetService('Players').LocalPlayer.Name)
 OWNER = game:GetService("Players"):FindFirstChild(StandOwner)
 rs = game:GetService("RunService")
